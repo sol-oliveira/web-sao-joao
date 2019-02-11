@@ -1,0 +1,85 @@
+#carousel_container {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+#carousel_inner {
+	width: 1100px;
+	overflow: hidden;
+	background: #EEA2AD;
+}
+
+#carousel_ul li img {
+	width: 350px;
+	height: 220px;
+}
+
+#carousel_ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 9999px;
+	padding-bottom: 10px;
+}
+
+#carousel_ul li {
+	float: left;
+	width: 350px;
+	padding: 0px;
+	height: 220px;
+	background: #000000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#carousel_ul li img {
+	margin-bottom: -4px;
+	cursor: pointer;
+	cursor: hand;
+	border: 0px;
+}
+
+#left_scroll, #right_scroll {
+	float: left;
+	height: 130px;
+	width: 35px;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#left_scroll img, #right_scroll img {
+	border: 0;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#left_scroll img {
+	width: 25px;
+	height: 25px;
+}
+
+#right_scroll img {
+	width: 25px;
+	height: 25px;
+}
+
+@media screen and (max-width: 650px) {
+	#carousel_inner {
+		width: 330px;
+	}
+
+	#carousel_ul li img {
+		width: 100px;
+		height: 55px;
+	}
+
+	#carousel_ul li {
+		width: 100px;
+		height: 55px;
+	}
+}
